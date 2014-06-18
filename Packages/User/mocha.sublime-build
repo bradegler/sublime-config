@@ -1,0 +1,3 @@
+{
+    "shell_cmd": "mocha -R tap $file"
+}

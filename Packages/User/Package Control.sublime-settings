@@ -1,0 +1,27 @@
+{
+	"installed_packages":
+	[
+		"Blusted Scheme",
+		"Dockerfile Syntax Highlighting",
+		"Flatron",
+		"Git",
+		"GitGutter",
+		"Handlebars",
+		"Javatar",
+		"JsFormat",
+		"LESS",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Node Completions",
+		"Nodejs",
+		"Pretty JSON",
+		"Puppet",
+		"Sass",
+		"SideBarGit",
+		"sublimelint",
+		"Theme - Argonaut",
+		"Theme - Flatland",
+		"Wombat Theme",
+		"WordCount"
+	]
+}
