@@ -1,0 +1,29 @@
+{
+	"installed_packages":
+	[
+		"Color Scheme - JustBeforeDawn",
+		"ColorSchemeSelector",
+		"Dockerfile Syntax Highlighting",
+		"GitGutter",
+		"Gradle_Language",
+		"Handlebars",
+		"HTML-CSS-JS Prettify",
+		"Indent XML",
+		"Javascript Beautify",
+		"JSHint",
+		"LESS",
+		"Markdown Extended",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Puppet",
+		"Sass",
+		"SassBeautify",
+		"SublimeLinter",
+		"SublimeLinter-jshint",
+		"Theme - Argonaut",
+		"Theme - Flatland",
+		"Theme - Soda",
+		"Vagrant",
+		"WordCount"
+	]
+}

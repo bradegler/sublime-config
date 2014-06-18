@@ -1,0 +1,11 @@
+{
+	"color_scheme": "Packages/User/Flatland Dark (SL).tmTheme",
+	"enable_live_count": true,
+	"ignored_packages":
+	[
+		"Vintage",
+		"Markdown"
+	],
+	"theme": "Soda Light 3.sublime-theme",
+	"translate_tabs_to_spaces": true
+}
