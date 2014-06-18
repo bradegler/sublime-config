@@ -1,0 +1,16 @@
+{
+    "selector": "source.js",
+    "cmd": ["node", "$file"],
+    "variants": [{
+        "cmd": ["test", "-R", "tap", "$file"],
+        "name": "mocha"
+    },{
+        "name": "gulp build",
+        "working_dir": "$project_path",
+        "cmd": ["gulp", "build"]
+    },{
+        "name": "gulp test",
+        "working_dir": "$project_path",
+        "cmd": ["gulp", "test"]
+    }]
+}
