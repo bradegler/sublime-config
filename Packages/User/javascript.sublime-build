@@ -2,8 +2,8 @@
     "selector": "source.js",
     "cmd": ["node", "$file"],
     "variants": [{
-        "cmd": ["test", "-R", "tap", "$file"],
-        "name": "mocha"
+        "name": "mocha test",
+        "cmd": ["mocha", "-R", "tap", "$file"]
     },{
         "name": "gulp build",
         "working_dir": "$project_path",
