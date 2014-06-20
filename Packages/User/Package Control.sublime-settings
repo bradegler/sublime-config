@@ -8,8 +8,10 @@
 		"GitGutter",
 		"Gradle_Language",
 		"Handlebars",
+		"HTML-CSS-JS Prettify",
 		"Javatar",
 		"JsFormat",
+		"JSHint",
 		"LESS",
 		"Markdown Preview",
 		"MarkdownEditing",
@@ -19,8 +21,10 @@
 		"Sass",
 		"SideBarGit",
 		"sublimelint",
+		"SublimeLinter",
 		"Theme - Argonaut",
 		"Theme - Flatland",
+		"Theme - Soda SolarizedDark",
 		"Wombat Theme",
 		"WordCount"
 	]
