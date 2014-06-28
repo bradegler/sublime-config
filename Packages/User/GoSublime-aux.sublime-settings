@@ -1,4 +1,17 @@
 {
+	"9o.hist./data/git/gorest/src/github.com/bradegler/newmath":
+	[
+		"go build",
+		"go run",
+		"go run hello.og",
+		"go run hello.go",
+		"go run gihub.com/bradegler/hello.go",
+		"go run src/gihub.com/bradegler/hello.go",
+		"go run src/github.com/bradegler/hello.go",
+		"go run src/github.com/bradegler/hello/hello.go",
+		"go run ../hello.go",
+		"go run ../hello/hello.go"
+	],
 	"ann": "a14.02.25-1",
 	"install_version": "r13.12.26-3",
 	"version": "r13.12.26-3"

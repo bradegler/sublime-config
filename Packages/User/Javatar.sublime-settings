@@ -1,7 +1,56 @@
 {
+	"jdk_installation":
+	{
+		"linux":
+		[
+			"/data/tools/java"
+		]
+	},
 	"jdk_version":
 	{
-		"use": ""
+		"JDK1.4.2u19":
+		{
+			"path": "/data/tools/java/j2sdk1.4.2_19/bin",
+			"update": "19",
+			"version": "1.4.2"
+		},
+		"JDK1.5.0u22":
+		{
+			"path": "/data/tools/java/jdk1.5.0_22/bin",
+			"update": "22",
+			"version": "1.5.0"
+		},
+		"JDK1.7.0u17":
+		{
+			"path": "/data/tools/java/jdk1.7.0_17/bin",
+			"update": "17",
+			"version": "1.7.0"
+		},
+		"JDK1.7.0u21":
+		{
+			"path": "/data/tools/java/jdk1.7.0_21/bin",
+			"update": "21",
+			"version": "1.7.0"
+		},
+		"JDK1.7.0u25":
+		{
+			"path": "/data/tools/java/jdk1.7.0_25/bin",
+			"update": "25",
+			"version": "1.7.0"
+		},
+		"JDK1.7.0u40":
+		{
+			"path": "/data/tools/java/jdk1.7.0_40/bin",
+			"update": "40",
+			"version": "1.7.0"
+		},
+		"JDK1.7.0u45":
+		{
+			"path": "/data/tools/java/jdk1.7.0_45/bin",
+			"update": "45",
+			"version": "1.7.0"
+		},
+		"use": "JDK1.7.0u45"
 	},
 	"message_id": 16,
 	"package_channel": "dev"

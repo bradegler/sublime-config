@@ -1,0 +1,57 @@
+
+** 2014-06-22 06:08:52.140125 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2014-06-24 06:03:43.067285 **:
+MarGo: MarGo build failed
+cmd: `['', 'build', '-v', '-x', '-o', 'gosublime.margo_r13.12.26-3_go?.exe', 'gosubli.me/margo']`
+stdout: ``
+stderr: ``
+exception: `Cannot find command `go``
+--------------------------------
+
+** 2014-06-24 06:03:43.085494 **:
+MarGo: Missing required environment variables: GOROOT GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2014-06-26 04:43:01.786667 **:
+MarGo: MarGo build failed
+cmd: `['', 'build', '-v', '-x', '-o', 'gosublime.margo_r13.12.26-3_go?.exe', 'gosubli.me/margo']`
+stdout: ``
+stderr: ``
+exception: `Cannot find command `go``
+--------------------------------
+
+** 2014-06-26 04:43:01.810251 **:
+MarGo: Missing required environment variables: GOROOT GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2014-06-28 06:13:15.125338 **:
+MarGo: MarGo build failed
+cmd: `['/data/tools/go/bin/go', 'build', '-v', '-x', '-o', 'gosublime.margo_r13.12.26-3_go?.exe', 'gosubli.me/margo']`
+stdout: ``
+stderr: `go: cannot find GOROOT directory: /usr/local/go`
+exception: `None`
+--------------------------------
+
+** 2014-06-28 06:13:15.151648 **:
+MarGo: Missing required environment variables: GOROOT GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2014-06-28 06:49:28.300243 **:
+MarGo: MarGo build failed
+cmd: `['', 'build', '-v', '-x', '-o', 'gosublime.margo_r13.12.26-3_go?.exe', 'gosubli.me/margo']`
+stdout: ``
+stderr: ``
+exception: `Cannot find command `go``
+--------------------------------
+
+** 2014-06-28 06:49:28.309389 **:
+MarGo: Missing required environment variables: GOROOT GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
