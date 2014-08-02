@@ -1,4 +1,5 @@
 {
+	"javatar_gp": 0,
 	"jdk_installation":
 	{
 		"linux":
@@ -52,6 +53,19 @@
 		},
 		"use": "JDK1.7.0u45"
 	},
-	"message_id": 16,
-	"package_channel": "dev"
+	"message_id": 18,
+	"package_channel": "dev",
+	"project_data":
+	{
+		"2":
+		{
+			"folders":
+			[
+				{
+					"follow_symlinks": true,
+					"path": "/data/git/sparkea"
+				}
+			]
+		}
+	}
 }
