@@ -1,4 +1,23 @@
 {
+	"9o.hist./data/git/dev/gorest":
+	[
+		"export GOPATH=/data/git/dev/gorest",
+		"ps",
+		"go run main.go",
+		"killall main"
+	],
+	"9o.hist./data/git/dev/gorest/src":
+	[
+		"cd ../"
+	],
+	"9o.hist./data/git/dev/gorest/src/github.com":
+	[
+		"cd ../"
+	],
+	"9o.hist./data/git/dev/gorest/src/github.com/bradegler/server":
+	[
+		"cd ../../"
+	],
 	"9o.hist./data/git/gorest/src/github.com/bradegler/newmath":
 	[
 		"go build",

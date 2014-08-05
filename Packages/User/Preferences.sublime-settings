@@ -13,6 +13,7 @@
 	"enable_telemetry": "disable",
 	"find_selected_text": false,
 	"fold_buttons": false,
+	"font_size": 10,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
