@@ -6,20 +6,23 @@
 	"auto_complete_with_fields": false,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/Monokai Soda (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Flatland Dark (SL).tmTheme",
 	"default_line_ending": "unix",
 	"detect_slow_plugins": true,
 	"draw_white_space": "selection",
 	"enable_telemetry": "disable",
 	"find_selected_text": false,
 	"fold_buttons": false,
-	"font_size": 10,
+	"font_face": "Inconsolata",
+	"font_size": 12,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Vintage",
 		"Markdown",
-		"Vintage"
+		"ColorSchemeSelector",
+		"Theme - Soda"
 	],
 	"indent_guide_options":
 	[
@@ -36,8 +39,8 @@
 	"show_panel_on_build": true,
 	"show_tab_close_buttons": true,
 	"soda_folder_icons": true,
-	"tab_size": 2,
-	"theme": "Soda Light 3.sublime-theme",
+	"tab_size": 4,
+	"theme": "Brogrammer.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_simple_full_screen": false,

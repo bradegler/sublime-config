@@ -1,4 +1,13 @@
 {
+	"in_process_packages":
+	[
+	],
+	"installed_dependencies":
+	[
+		"0_package_control_loader",
+		"bz2",
+		"ssl-linux"
+	],
 	"installed_packages":
 	[
 		"Blusted Scheme",
@@ -21,16 +30,23 @@
 		"Markdown Extended",
 		"Markdown Preview",
 		"MarkdownEditing",
-		"Node Completions",
+		"Package Control",
+		"Play 2.0",
 		"Pretty JSON",
 		"Puppet",
 		"Sass",
+		"SassBeautify",
+		"ScalaWorksheet",
 		"SideBarEnhancements",
 		"SideBarGit",
 		"SublimeCodeIntel",
 		"sublimelint",
 		"SublimeLinter",
+		"SublimeLinter-jshint",
 		"Theme - Argonaut",
+		"Theme - Asphalt",
+		"Theme - Brogrammer",
+		"Theme - Farzher",
 		"Theme - Flatland",
 		"Theme - Freesia",
 		"Theme - Nil",

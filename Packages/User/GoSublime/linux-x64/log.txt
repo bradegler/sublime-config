@@ -55,3 +55,480 @@ exception: `Cannot find command `go``
 MarGo: Missing required environment variables: GOROOT GOPATH
 See the `Quirks` section of USAGE.md for info
 --------------------------------
+
+** 2014-08-07 05:40:24.046208 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2014-08-08 05:43:47.461730 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2014-08-09 04:39:42.525314 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2014-08-09 05:19:57.022194 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2014-08-10 06:29:26.309727 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+margo: 2014/08/10 09:31:05 broker.go:105: gocode_calltip#mg9.autoken.4d123700-1a19-452e-8a84-7db5cb309493 PANIC: open /data/git/sparkea/wharf/src/code.bradegler.com/wharfer/: no such file or directory
+goroutine 22 [running]:
+main.func·001()
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:104 +0xcc
+runtime.panic(0x7a3d60, 0xc21031f6f0)
+	/usr/local/go/src/pkg/runtime/panic.c:248 +0x106
+gosubli.me/something-borrowed/gocode.find_other_package_files(0xc2101f1690, 0x41, 0xc2101e9710, 0x7, 0x24, ...)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletecontext.go:413 +0x112
+gosubli.me/something-borrowed/gocode.get_other_package_files(0xc2101f1690, 0x41, 0xc2101e9710, 0x7, 0xc21006dd60, ...)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletecontext.go:378 +0x80
+gosubli.me/something-borrowed/gocode.(*auto_complete_context).update_caches(0xc21006bf00)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletecontext.go:160 +0xba
+gosubli.me/something-borrowed/gocode.(*auto_complete_context).apropos(0xc21006bf00, 0xc210202cc0, 0x58, 0x58, 0xc2101f1690, ...)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletecontext.go:246 +0x9c
+gosubli.me/something-borrowed/gocode.(*margoState).Complete(0xc21006cdb0, 0x1, 0x0, 0x0, 0xc21032c6d0, ...)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/gosublime_gocode_bridge.go:52 +0x125
+main.(*mGocode).completions(0xc21036df80, 0xc210202cc0, 0x58, 0x58, 0xc2101f1690, ...)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:95 +0x130
+main.(*mGocode).calltips(0xc21036df80, 0xc210202cc0, 0x58, 0x58, 0xc2101f1690, ...)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:105 +0x195
+main.(*mGocode).Call(0xc21036df80, 0x3d0, 0x42529f, 0xc2101b4050, 0x0)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:74 +0x44f
+main.(*Broker).call(0xc210074000, 0xc210357060, 0x7f52b882afa8, 0xc21036df80)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:113 +0xb5
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:188 +0xc0
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 1 [syscall]:
+syscall.Syscall(0x0, 0x0, 0xc210182000, 0x1000, 0x7d, ...)
+	/usr/local/go/src/pkg/syscall/asm_linux_amd64.s:18 +0x5
+syscall.read(0x0, 0xc210182000, 0x1000, 0x1000, 0x186, ...)
+	/usr/local/go/src/pkg/syscall/zsyscall_linux_amd64.go:838 +0x72
+syscall.Read(0x0, 0xc210182000, 0x1000, 0x1000, 0x6, ...)
+	/usr/local/go/src/pkg/syscall/syscall_unix.go:135 +0x5c
+os.(*File).read(0xc210000000, 0xc210182000, 0x1000, 0x1000, 0xca80a0, ...)
+	/usr/local/go/src/pkg/os/file_unix.go:180 +0x62
+os.(*File).Read(0xc210000000, 0xc210182000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/os/file.go:95 +0x98
+bufio.(*Reader).fill(0xc2100476c0)
+	/usr/local/go/src/pkg/bufio/bufio.go:91 +0x110
+bufio.(*Reader).ReadSlice(0xc2100476c0, 0xc21001480a, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:274 +0x204
+bufio.(*Reader).ReadBytes(0xc2100476c0, 0xc2101b400a, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:355 +0xbf
+main.(*Broker).accept(0xc210074000, 0xc2101b4000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:128 +0x46
+main.(*Broker).Loop(0xc210074000, 0xc210030001)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:213 +0x25b
+main.main()
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/main.go:140 +0x9cf
+
+goroutine 4 [chan receive]:
+gosubli.me/something-borrowed/gocode.func·021()
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:112 +0x59
+created by gosubli.me/something-borrowed/gocode.new_file_reader
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:116 +0x9e
+
+goroutine 5 [chan receive]:
+main.func·003()
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:114 +0x5c
+created by main.init·2
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:117 +0x21
+
+goroutine 6 [sleep]:
+time.Sleep(0x77359400)
+	/usr/local/go/src/pkg/runtime/time.goc:31 +0x31
+main.func·037()
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/oom.go:31 +0x26c
+created by main.startOomKiller
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/oom.go:33 +0x63
+
+goroutine 7 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/pkg/runtime/time.goc:31 +0x31
+main.func·033()
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/main.go:122 +0x4d
+created by main.main
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/main.go:131 +0x952
+
+goroutine 8 [chan receive]:
+main.func·034()
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/main.go:135 +0x4e
+created by main.main
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/main.go:138 +0x982
+
+goroutine 11 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 12 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 13 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 14 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 15 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 16 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 17 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 18 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 19 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 20 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 21 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 23 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 24 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 25 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 27 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 28 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 29 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 30 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 32 [finalizer wait]:
+runtime.park(0x425270, 0xc896e8, 0xc874a8)
+	/usr/local/go/src/pkg/runtime/proc.c:1342 +0x66
+runfinq()
+	/usr/local/go/src/pkg/runtime/mgc0.c:2279 +0x84
+runtime.goexit()
+	/usr/local/go/src/pkg/runtime/proc.c:1394
+
+
+margo: 2014/08/10 10:51:17 broker.go:105: gocode_complete#mg9.autoken.942b70e8-b939-48c5-8394-e60080500e83 PANIC: runtime error: slice bounds out of range
+goroutine 21 [running]:
+main.func·001()
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:104 +0xcc
+runtime.panic(0x7c3b20, 0xc8560a)
+	/usr/local/go/src/pkg/runtime/panic.c:248 +0x106
+gosubli.me/something-borrowed/gocode.path_and_alias(0xc214518f60, 0x7f52b882b020, 0xc214518f60, 0xc214518f60, 0xc21006b900)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/declcache.go:191 +0xb8
+gosubli.me/something-borrowed/gocode.collect_package_imports(0xc21023ef50, 0x4e, 0xc2103de430, 0x1, 0x1, ...)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/declcache.go:55 +0x171
+gosubli.me/something-borrowed/gocode.(*auto_complete_file).process_data(0xc21005bd90, 0xc2144c9a80, 0xd7, 0xd7)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletefile.go:60 +0x19c
+gosubli.me/something-borrowed/gocode.(*auto_complete_context).apropos(0xc21006bf00, 0xc2144c9a80, 0xd7, 0xd7, 0xc21023ef50, ...)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletecontext.go:241 +0x8b
+gosubli.me/something-borrowed/gocode.(*margoState).Complete(0xc21006cdb0, 0x0, 0x0, 0x0, 0xc2103de200, ...)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/gosublime_gocode_bridge.go:52 +0x125
+main.(*mGocode).completions(0xc2102dc200, 0xc2144c9a80, 0xd7, 0xd7, 0xc21023ef50, ...)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:95 +0x130
+main.(*mGocode).Call(0xc2102dc200, 0x18e7, 0x42529f, 0xc2101b4050, 0x0)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:76 +0x5ba
+main.(*Broker).call(0xc210074000, 0xc2103e9860, 0x7f52b882afa8, 0xc2102dc200)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:113 +0xb5
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:188 +0xc0
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 1 [syscall]:
+syscall.Syscall(0x0, 0x0, 0xc210182000, 0x1000, 0x7d, ...)
+	/usr/local/go/src/pkg/syscall/asm_linux_amd64.s:18 +0x5
+syscall.read(0x0, 0xc210182000, 0x1000, 0x1000, 0x186, ...)
+	/usr/local/go/src/pkg/syscall/zsyscall_linux_amd64.go:838 +0x72
+syscall.Read(0x0, 0xc210182000, 0x1000, 0x1000, 0x6, ...)
+	/usr/local/go/src/pkg/syscall/syscall_unix.go:135 +0x5c
+os.(*File).read(0xc210000000, 0xc210182000, 0x1000, 0x1000, 0x43656c, ...)
+	/usr/local/go/src/pkg/os/file_unix.go:180 +0x62
+os.(*File).Read(0xc210000000, 0xc210182000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/os/file.go:95 +0x98
+bufio.(*Reader).fill(0xc2100476c0)
+	/usr/local/go/src/pkg/bufio/bufio.go:91 +0x110
+bufio.(*Reader).ReadSlice(0xc2100476c0, 0xc21019380a, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:274 +0x204
+bufio.(*Reader).ReadBytes(0xc2100476c0, 0xc2101b400a, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:355 +0xbf
+main.(*Broker).accept(0xc210074000, 0xc2101b4000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:128 +0x46
+main.(*Broker).Loop(0xc210074000, 0xc210030001)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:213 +0x25b
+main.main()
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/main.go:140 +0x9cf
+
+goroutine 4 [chan receive]:
+gosubli.me/something-borrowed/gocode.func·021()
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:112 +0x59
+created by gosubli.me/something-borrowed/gocode.new_file_reader
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:116 +0x9e
+
+goroutine 5 [chan receive]:
+main.func·003()
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:114 +0x5c
+created by main.init·2
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:117 +0x21
+
+goroutine 6 [sleep]:
+time.Sleep(0x77359400)
+	/usr/local/go/src/pkg/runtime/time.goc:31 +0x31
+main.func·037()
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/oom.go:31 +0x26c
+created by main.startOomKiller
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/oom.go:33 +0x63
+
+goroutine 7 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/pkg/runtime/time.goc:31 +0x31
+main.func·033()
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/main.go:122 +0x4d
+created by main.main
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/main.go:131 +0x952
+
+goroutine 8 [chan receive]:
+main.func·034()
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/main.go:135 +0x4e
+created by main.main
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/main.go:138 +0x982
+
+goroutine 11 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 12 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 13 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 14 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 15 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 16 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 17 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 18 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 19 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 20 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 22 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 23 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 24 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 25 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 27 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 28 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 29 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 30 [chan receive]:
+main.(*Broker).worker(0xc210074000, 0xc21006d000, 0xc2101b4000)
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x5d
+created by main.(*Broker).Loop
+	/home/begler/.config/sublime-text-3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x22b
+
+goroutine 32 [finalizer wait]:
+runtime.park(0x425270, 0xc896e8, 0xc874a8)
+	/usr/local/go/src/pkg/runtime/proc.c:1342 +0x66
+runfinq()
+	/usr/local/go/src/pkg/runtime/mgc0.c:2279 +0x84
+runtime.goexit()
+	/usr/local/go/src/pkg/runtime/proc.c:1394
+
+
+
+** 2014-08-10 10:51:17.972643 **:
+GsComplete: broker: gocode_complete#mg9.autoken.942b70e8-b939-48c5-8394-e60080500e83 PANIC
+--------------------------------
+
+** 2014-09-04 09:45:25.991255 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2014-09-04 09:55:46.470473 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2014-09-04 14:45:58.920237 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2014-09-04 17:35:32.632726 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2014-09-24 04:53:54.011410 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2014-10-03 10:13:57.698878 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
