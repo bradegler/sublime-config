@@ -19,10 +19,10 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage",
+		"Theme - Soda",
 		"Markdown",
-		"ColorSchemeSelector",
-		"Theme - Soda"
+		"Vintage",
+		"ColorSchemeSelector"
 	],
 	"indent_guide_options":
 	[
