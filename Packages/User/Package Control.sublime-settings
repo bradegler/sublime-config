@@ -4,6 +4,7 @@
 	],
 	"installed_packages":
 	[
+		"ApplySyntax",
 		"Blusted Scheme",
 		"Cheat Sheets",
 		"Dockerfile Syntax Highlighting",
@@ -12,7 +13,6 @@
 		"Git",
 		"GitCommitMsg",
 		"GitGutter",
-		"GoSublime",
 		"Gradle_Language",
 		"Handlebars",
 		"HTML-CSS-JS Prettify",
@@ -46,6 +46,7 @@
 		"Theme - Nil",
 		"Theme - Phoenix",
 		"Theme - Soda SolarizedDark",
+		"Vagrant",
 		"Wombat Theme",
 		"WordCount"
 	]

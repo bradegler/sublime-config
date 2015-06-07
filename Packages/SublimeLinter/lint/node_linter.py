@@ -12,6 +12,8 @@
 
 import json
 import hashlib
+import codecs
+import sublime
 
 from functools import lru_cache
 from os import path, access, X_OK
@@ -84,7 +86,7 @@ class NodeLinter(linter.Linter):
 
         # also return true if the name is the same so linters can lint their
         # own code (e.g. eslint can lint the eslint project)
-        is_dep = True if self.npm_name == pkg['name'] else False
+        is_dep = 'name' in pkg and self.npm_name == pkg['name']
 
         if not is_dep:
             is_dep = True if (
@@ -184,6 +186,9 @@ class NodeLinter(linter.Linter):
 
         binary = path.join(node_modules_bin, cmd)
 
+        if sublime.platform() == 'windows' and path.splitext(binary)[1] != '.cmd':
+            binary += '.cmd'
+
         return binary if binary and access(binary, X_OK) else None
 
     def get_pkg_bin_cmd(self, cmd):
@@ -219,12 +224,12 @@ class NodeLinter(linter.Linter):
 
         self.cached_manifest_mtime = current_manifest_mtime
         self.cached_manifest_hash = self.hash_manifest()
-        self.cached_manifest = json.load(open(self.manifest_path))
+        self.cached_manifest = json.load(codecs.open(self.manifest_path, 'r', 'utf-8'))
 
     def hash_manifest(self):
         """Calculate the hash of the manifest file."""
 
-        f = open(self.manifest_path, 'r')
+        f = codecs.open(self.manifest_path, 'r', 'utf-8')
         return hashlib.sha1(f.read().encode('utf-8')).hexdigest()
 
     @classmethod
