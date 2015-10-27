@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -16,6 +17,7 @@
 		"Gradle_Language",
 		"Handlebars",
 		"HTML-CSS-JS Prettify",
+		"HTMLBeautify",
 		"Indent XML",
 		"Javascript Beautify",
 		"JsFormat",
@@ -24,6 +26,7 @@
 		"Markdown Extended",
 		"Markdown Preview",
 		"MarkdownEditing",
+		"Material Theme",
 		"Package Control",
 		"Play 2.0",
 		"Pretty JSON",
@@ -37,6 +40,7 @@
 		"sublimelint",
 		"SublimeLinter",
 		"SublimeLinter-jshint",
+		"Syntax Highlighting for Sass",
 		"Theme - Argonaut",
 		"Theme - Asphalt",
 		"Theme - Brogrammer",

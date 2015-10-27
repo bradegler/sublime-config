@@ -4,6 +4,7 @@
 	[
 	],
 	"auto_complete_with_fields": false,
+	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/User/SublimeLinter/Flatland Dark (SL).tmTheme",
@@ -19,21 +20,21 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Markdown",
 		"ColorSchemeSelector",
-		"Vintage",
+		"Markdown",
 		"SideBarEnhancements",
-		"Theme - Soda"
+		"Theme - Soda",
+		"Vintage"
 	],
 	"indent_guide_options":
 	[
-		"draw_active",
-		"draw_normal"
+		"draw_normal",
+		"draw_active"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"margin": 0,
-	"overlay_scroll_bars": false,
+	"overlay_scroll_bars": "enabled",
 	"scroll_past_end": true,
 	"scroll_speed": 0,
 	"show_full_path": true,
@@ -41,7 +42,7 @@
 	"show_tab_close_buttons": true,
 	"soda_folder_icons": true,
 	"tab_size": 4,
-	"theme": "Brogrammer.sublime-theme",
+	"theme": "Material-Theme-Darker.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_simple_full_screen": false,
